@@ -24,20 +24,155 @@ p {
 
 body {
   margin: 0;
-  --primary-blue: #336AEA;
-  
+  --primary-blue: #5f5e5d;
+  --primary-lightest-blue: #C7C7C7;
+  --primary-black: #111827;
+  --secondary-black: #323232;
+
+  --primary-grey: #808080;
+  --primary-light-grey: #3F3F3F;
+  --secondary-grey: #676C8B;
+  --light-grey: #909090;
+  --dark-grey: #595959;
+
+  --primary-white: #ffffff;
+  --secondary-white: #EDEDED;
+  --light-white: #C7C7C7;
+  --grey: #EEF0F5;
+  --heading: #122A52;
+  --new-color1: #4c57a5;
+  --new-color2: #8C8C8C;
   ;
 }
 
 //Text Colors
 
-.text-primary{
-    color: var(--primary-blue);
+//Text Colors
+
+.primary-blue {
+  color: var(--primary-blue);
+}
+
+.primary-lightest-blue {
+  color: var(--primary-lightest-blue);
+}
+
+.primary-black {
+  color: var(--primary-black);
+}
+
+.primary-grey {
+  color: var(--primary-grey);
+}
+
+.secondary-grey {
+  color: var(--secondary-grey);
+}
+
+.light-grey {
+  color: var(--light-grey);
+}
+
+.dark-grey {
+  color: var(--dark-grey);
+}
+
+.primary-light-grey {
+  color: var(--primary-light-grey);
+}
+
+.primary-white {
+  color: var(--primary-white);
+}
+
+.secondary-white {
+  color: var(--secondary-white);
+}
+
+.light-white {
+  color: var(--light-white);
+}
+
+.heading-color {
+  color: var(--heading)
+}
+
+.new-color1 {
+  color: var(--new-color1);
+}
+
+.new-color2 {
+  color: var(--new-color2);
+}
+
+.yellow-color {
+  color: #FFC300;
 }
 
 //background color
-.bg-primary{
-    background-color: var(--primary-blue);
+
+.primary-blue-bg {
+  background-color: var(--primary-blue);
+}
+
+.primary-lightest-blue-bg {
+  background-color: var(--primary-lightest-blue);
+}
+
+.primary-black-bg {
+  background-color: var(--primary-black);
+}
+
+.primary-grey-bg {
+  background-color: var(--primary-grey);
+}
+
+.secondary-grey-bg {
+  background-color: var(--secondary-grey);
+}
+
+.light-grey-bg {
+  background-color: var(--light-grey);
+}
+
+.dark-grey-bg {
+  background-color: var(--dark-grey);
+}
+
+.primary-light-grey-bg {
+  background-color: var(--primary-light-grey);
+}
+
+.primary-white-bg {
+  background-color: var(--primary-white)
+}
+
+.secondary-white-bg {
+  background-color: var(--secondary-white)
+}
+
+.light-white-bg {
+  background-color: var(--light-white);
+}
+
+.transparent-bg {
+  background-color: transparent;
+}
+
+.grey-bg {
+  background-color: var(--grey);
+}
+
+.new-color1-bg {
+  background-color: var(--new-color1);
+}
+
+.new-color2-bg {
+  background-color: var(--new-color2);
+}
+
+.yellow-bg {
+  background-color: #FFC300;
 }
 
 
@@ -68,6 +203,14 @@ body {
 
 .fw-300 {
   font-weight: 300 !important;
+}
+
+.fw-200 {
+  font-weight: 200 !important;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
 }
 
 //Letter Spacing

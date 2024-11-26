@@ -1,0 +1,93 @@
+.banner {
+    background-image: url(./../../../../public/assests/images/About-hand.png);
+    background-position: 85px 0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    background-color: #C6C6C6;
+
+    &:hover {
+        // width: 102%;
+        // height: 102%;
+        // transform: translateX(var(--translateX)) translateY(var(--translateY));
+        // --translateX: -11.19700520833332px;
+        // --translateY: -14.759189901207506px;
+    }
+}
+
+.heading1 {
+    color: #b7b4b5;
+    font-size: 97px;
+    line-height: 0.9em;
+    padding: 0px 0px 0px 200px;
+
+    span {
+        color: #5F5E5D;
+        font-size: 80px;
+    }
+}
+
+.heading2 {
+    color: #b7b4b5;
+    font-size: 120px;
+    line-height: 0.9em;
+    padding: 0px 0px 0px 200px;
+
+    span {
+        color: #5F5E5D;
+    }
+}
+
+
+.line {
+    border: 8px solid #C6C6C6;
+    // border-color: #C6C6C6;
+}
+
+.divider {
+
+    .dot1 {
+        // border: 16px solid #4c57a5;
+        border: 16px solid;
+        border-radius: 50px;
+        border-color: #4c57a5;
+    }
+
+    .dot2 {
+        // border: 16px solid #4c57a5;
+        border: 16px solid;
+        border-radius: 50px;
+        border-color: black;
+    }
+}
+
+.step {
+    position: relative;
+
+    p {
+        border: 1px solid gray;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        text-align: center;
+        line-height: 20px;
+        position: relative;
+
+        /* Dashed line styling */
+        &::after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 270px;
+            border-top: 2px solid #C7C7C7;;
+            top: 50%;
+            left: 100%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.steps-container>.d-flex:last-child .step p::after {
+    display: none;
+}
