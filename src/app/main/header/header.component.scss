@@ -1,6 +1,7 @@
 .header{
     background-color: transparent;
     position: fixed;
+    top: 0;
     z-index: 2;
    
 }
@@ -9,12 +10,12 @@
     padding: 20px 0;
     border-bottom: 1px solid rgb(221, 221, 221);
 }
-.logo img{
-    display: none;
-}
-.header.scrolled .logo img{
-   display: flex;
-}
+// .logo img{
+//     display: none;
+// }
+// .header.scrolled .logo img{
+//    display: flex;
+// }
 .header.scrolled .icon i{
    color: var(--primary-blue) !important;
    border: 2px solid var(--primary-blue);

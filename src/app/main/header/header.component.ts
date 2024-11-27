@@ -1,5 +1,5 @@
 import { isPlatformBrowser } from '@angular/common';
-import { Component, HostListener, Inject, PLATFORM_ID, Renderer2 } from '@angular/core';
+import { Component, EventEmitter, HostListener, Inject, Output, PLATFORM_ID, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +7,11 @@ import { Component, HostListener, Inject, PLATFORM_ID, Renderer2 } from '@angula
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  @Output() toggle = new EventEmitter<void>();
 
+  onToggleMenu() {
+    this.toggle.emit();
+  }
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
     private renderer: Renderer2,
