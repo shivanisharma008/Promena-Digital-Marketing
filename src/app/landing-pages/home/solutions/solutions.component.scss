@@ -1,0 +1,15 @@
+.solutions_main{
+    background-color: #F9FAFB;
+}
+.solutions_right{
+    border-left: 4px solid var(--primary-grey);
+}
+.view_butn button{
+    border: 1px solid var(--primary-blue);
+}
+.solutions_left p:hover , .solutions_left h1:hover{
+    color: var(--primary-blue);
+}
+.solutions_right_list p:hover{
+    color: var(--primary-blue);
+}

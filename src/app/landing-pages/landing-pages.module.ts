@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { LandingPagesRoutingModule } from './landing-pages-routing.module';
 import { LandingPagesComponent } from './landing-pages.component';
 import { RouterModule } from '@angular/router';
+import { MainModule } from '../main/main.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     LandingPagesRoutingModule,
-    RouterModule.forChild([{path:'',component:LandingPagesComponent}])
+    MainModule
+    // RouterModule.forChild([{path:'',component:LandingPagesComponent}])
   ]
 })
 export class LandingPagesModule { }
