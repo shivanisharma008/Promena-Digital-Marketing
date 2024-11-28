@@ -52,6 +52,12 @@ const routes: Routes = [
           import('./contact/contact.module').then ((m) => m.ContactModule),
         data: { title: 'Blogs' }
       },
+      {
+        path:'testimonial',
+        loadChildren:()=>
+          import('./testimonials/testimonials.module').then ((m) => m.TestimonialsModule),
+        data: { title: 'Testimonials' }
+      },
     ]
   }
 ];
