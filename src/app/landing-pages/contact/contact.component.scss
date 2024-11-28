@@ -42,21 +42,3 @@
         transform: rotate(360deg);
     }
 }
-.main_cards_list_item{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-    place-items: start;
-    justify-content: center;
-}
-.two_column_list{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
-.branding_list .card:last-child {
-    grid-column: 2 / 3; /* Adjust the column span to place it in the center */
-    justify-self: center; /* Centers the card in its column */
-}
-.card{
-    border: none;
-}

@@ -1,0 +1,91 @@
+<div class="career_main d-flex flex-column align-items-center justify-content-center">
+    <div class="career_body d-flex flex-column align-items-center justify-content-center w-100">
+        <div class="banner d-flex flex-column align-items-center justify-content-center  w-100 ">
+            <div class="banner_content d-flex flex-column align-items-center justify-content-center w-65">
+                <h1 class="heading-font font-50 fw-700">Career</h1>
+                <p class="primary-grey font-20 fw-400 text-a-c">If You Love What You Do,Then We Count <span
+                        class="primary-blue fw-600">ON YOU</span></p>
+            </div>
+            <img src="assests/images/start_blue.png" alt="star" class="extra-img" width="8%">
+            <img src="assests/images/ball-img.png" alt="star" class="ball-img">
+        </div>
+
+        <div class="career_main_content d-flex flex-wrap  justify-content-between w-85 py-5">
+            <div class="career_content_left w-35">
+                <div class="accordion br-n">
+                    <div class="accordion-item" *ngFor="let item of accordionItems; let i = index">
+                        <div class="accordion-header" (click)="toggleAccordion(i)">
+                            <p class="font-20 fw-400">{{ item.title }}</p>
+                            <span class="accordion-toggle" [class.active]="activeIndex === i">+</span>
+                        </div>
+                        <div class="accordion-content" [class.open]="activeIndex === i">
+                            <ng-container *ngIf="activeIndex === i">
+                                <p class="font-16 fw-500 mb-4">{{item.para}}</p>
+                                <div class="responsibility_content d-flex flex-column gap-2 mb-4">
+                                    <p class="font-18 fw-600">Responsibilities:</p>
+                                    <div class="responsibility_content_desc d-flex flex-column gap-3">
+                                        <span class="primary-grey font-14 fw-400"
+                                            *ngFor="let responsibility of item.respDesc">{{responsibility}}</span>
+                                    </div>
+                                </div>
+                                <div class="qualification_content d-flex flex-column gap-2">
+                                    <p class="font-18 fw-600">Qualifications:</p>
+                                    <ul class="d-flex flex-column gap-2">
+                                        <li class="primary-grey font-14 fw-400"
+                                            *ngFor="let qualification of item.quaList">{{qualification}}</li>
+                                    </ul>
+                                </div>
+
+                                <!-- <div [innerHTML]="item.content"></div> -->
+                            </ng-container>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="career_content_right w-60">
+                <form class="d-flex flex-column gap-4 w-100">
+                    <div class="form_group w-100">
+                        <div class="form_field">
+                            <input type="text" placeholder="Name" class="w-100 p-3">
+                        </div>
+                        <div class="form_field">
+                            <input type="text" placeholder="Mobile" class="w-100 p-3">
+                        </div>
+                        <div class="form_field">
+                            <input type="text" placeholder="Email" class="w-100 p-3">
+                        </div>
+                        <div class="form_field">
+                            <textarea rows="6" placeholder="Why should we hire you" class="w-100 p-3"></textarea>
+                        </div>
+                        <!-- <div class="form_field">
+                            <label for="resume" class="upload_label">Resume *</label>
+                            <div class="upload_box">
+                                <input type="file" id="resume" class="upload_input"
+                                    (change)="onFileSelected($event, 'resume')" accept=".pdf,.doc,.docx" />
+                                <div class="upload_placeholder">
+                                    <span>{{ uploadedFiles.resume || 'Click or drag a file to this area to upload.'
+                                        }}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form_field">
+                            <label for="coverLetter" class="upload_label">Cover Letter</label>
+                            <div class="upload_box">
+                                <input type="file" id="coverLetter" class="upload_input"
+                                    (change)="onFileSelected($event, 'coverLetter')" accept=".pdf,.doc,.docx" />
+                                <div class="upload_placeholder">
+                                    <span>{{ uploadedFiles.coverLetter || 'Click or drag a file to this area to upload.'
+                                        }}</span>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="submit_butn">
+                        <button class="primary-blue-bg primary-white font-16 fw-600 p-2 px-5 br-3 br-n">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

@@ -22,6 +22,36 @@ const routes: Routes = [
           import('./about/about.module').then ((m) => m.AboutModule),
         data: { title: 'About' }
       },
+      {
+        path:'services',
+        loadChildren:()=>
+          import('./services/services.module').then ((m) => m.ServicesModule),
+        data: { title: 'Services' }
+      },
+      {
+        path:'career',
+        loadChildren:()=>
+          import('./career/career.module').then ((m) => m.CareerModule),
+        data: { title: 'Career' }
+      },
+      {
+        path:'blogs',
+        loadChildren:()=>
+          import('./blogs/blogs.module').then ((m) => m.BlogsModule),
+        data: { title: 'Blogs' }
+      },
+      {
+        path:'portfolio',
+        loadChildren:()=>
+          import('./portfolio/portfolio.module').then ((m) => m.PortfolioModule),
+        data: { title: 'Blogs' }
+      },
+      {
+        path:'contact',
+        loadChildren:()=>
+          import('./contact/contact.module').then ((m) => m.ContactModule),
+        data: { title: 'Blogs' }
+      },
     ]
   }
 ];

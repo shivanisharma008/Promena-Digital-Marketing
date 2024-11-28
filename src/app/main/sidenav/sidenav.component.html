@@ -1,19 +1,19 @@
-<div class="sidenav d-flex align-items-center justify-content-center" (mousemove)="onMouseMove($event)">
+<div class="sidenav d-flex align-items-center justify-content-center" >
     <div class="sidenav_body d-flex flex-column align-items-center justify-content-center w-85">
         <div class="moving-lines"></div>
         <div class="close_icon d-flex align-items-start justify-content-end w-100">
             <i class="fa-solid fa-xmark primary-blue font-30" (click)="close()"></i>
         </div>
         <div class="menus d-flex flex-wrap align-items-center gap-5">
-            <a class="primary-black font-30 fw-600 text-d-n cursor">About</a>
-            <a class="primary-black font-30 fw-600 text-d-n cursor">Services</a>
+            <a class="primary-black font-30 fw-600 text-d-n cursor" routerLink="/about">About</a>
+            <a class="primary-black font-30 fw-600 text-d-n cursor" routerLink="/services">Services</a>
             <a class="primary-black font-30 fw-600 text-d-n cursor">Testimonials</a>
-            <a class="primary-black font-30 fw-600 text-d-n cursor">Portfolio</a>
+            <!-- <a class="primary-black font-30 fw-600 text-d-n cursor">Portfolio</a> -->
             <a class="primary-black font-30 fw-600 text-d-n cursor">Blog</a>
             <a class="primary-black font-30 fw-600 text-d-n cursor">Career</a>
             <a class="primary-black font-30 fw-600 text-d-n cursor">Contact Us</a>
         </div>
-        <div *ngIf="clearEffectVisible" [ngStyle]="{ top: clearEffectTop + 'px', left: clearEffectLeft + 'px' }"
-            class="clear-effect"></div>
+        <!-- <div *ngIf="clearEffectVisible" [ngStyle]="{ top: clearEffectTop + 'px', left: clearEffectLeft + 'px' }"
+            class="clear-effect"></div> -->
     </div>
 </div>
