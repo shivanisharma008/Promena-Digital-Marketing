@@ -129,6 +129,19 @@
     grid-column-end: 3;
 }
 
+@media screen and (max-width:599px) {
+    .career_main_content{
+        gap: 30px ;
+    }
+    .career_content_left{
+        width: 100% !important;
+        border-right: none;
+    }
+    .career_content_right{
+        width: 100% !important;
+    }
+}
+
 // .upload_label {
 //     font-size: 14px;
 //     font-weight: bold;

@@ -60,3 +60,32 @@
 .card{
     border: none;
 }
+
+
+@media screen and (max-width:599px) {
+    .banner{
+        height: 70vh;
+    }
+    .main_cards_list_item{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        // grid-template-columns: repeat(1,1fr);
+    }
+    // .two_column_list{
+    //     grid-template-columns: repeat(1,1fr);
+    // } 
+    // .branding_list{
+    //     grid-column: 1 / 2;
+    // }
+    
+}
+
+@media screen and (min-width:600px) and (max-width:1023px) {
+    .main_cards_list_item{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .branding_list{
+        grid-column: 1 / 2;
+    }
+}

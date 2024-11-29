@@ -13,3 +13,17 @@
     grid-column-start: 1;
     grid-column-end: 3;
 }
+
+@media screen and (max-width:599px) {
+    .contact_left{
+        width: 100% !important;
+    }
+    .contact_right{
+        width: 100% !important;
+    }
+    .form_group{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

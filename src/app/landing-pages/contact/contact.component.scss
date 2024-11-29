@@ -42,3 +42,16 @@
         transform: rotate(360deg);
     }
 }
+
+@media screen and (max-width:599px) {
+    .contact_main_content{
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .contact_left{
+        width: 100% !important;
+    }
+    .contact_right{
+        width: 90% !important;
+    }
+}

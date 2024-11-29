@@ -16,3 +16,46 @@
 .solutions_right_list p:hover{
     color: var(--primary-blue);
 }
+
+@media screen and (max-width:599px) {
+    .solutions_body{
+        gap: 30px;
+    }
+    .solutions_left{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .solutions_right{
+        width: 100% !important;
+        justify-content: center;
+        border: none;
+    }
+    .solutions_right_list p{
+        text-align: center;
+    }
+    .view_butn{
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (min-width:600px) and (max-width:1023px) {
+    .solutions_body{
+        gap: 30px;
+    }
+    .solutions_left{
+        width: 100% !important;
+    }
+    .solutions_right{
+        width: 100% !important;
+        justify-content: center;
+        border: none;
+    }
+    .solutions_right_list p{
+        text-align: center;
+    }
+    .view_butn{
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

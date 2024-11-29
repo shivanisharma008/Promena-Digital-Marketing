@@ -84,3 +84,22 @@
 .blog_card:hover .blog_card_content {
     transform: translateY(-10px); /* Move content up slightly on hover */
 }
+
+@media screen and (max-width:599px) {
+    .blog_card{
+        height: 300px;
+    }
+    .blogs_main_cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    } 
+}
+
+@media screen and (min-width:600px) and (max-width:1023px) {
+    .blogs_main_cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    } 
+}
