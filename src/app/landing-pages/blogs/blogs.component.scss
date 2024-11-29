@@ -1,0 +1,105 @@
+.banner{
+    background-image: url(../../../../public/assests/images/services/inner-page-banner-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+}
+.ball-img{
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    animation: bounce 5s infinite;
+}
+.extra-img{
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    animation: rotate 15s linear infinite;
+}
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.blogs_main_cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.blog_card{
+    position: relative;
+    height: 400px;
+    overflow: hidden; 
+    transition: transform 0.3s ease;
+}
+.blog_card_img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    position: relative;
+}
+.blog_card_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%); /* Start as black and white */
+    transition: transform 0.5s ease, filter 0.5s ease; /* Smooth zoom and color transition */
+    transform: scale(1); /* Default scale */
+}
+.blog_card_content{
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    transition: transform 0.3s ease;
+}
+.blog_card:hover {
+    transform: translateY(-5px); /* Move the entire card up slightly */
+}
+.blog_card_img:hover img {
+    filter: grayscale(0); /* Remove black-and-white filter */
+    transform: scale(1.1); /* Zoom the image slightly */
+}
+.blog_card:hover .blog_card_content {
+    transform: translateY(-10px); /* Move content up slightly on hover */
+}
+
+@media screen and (max-width:599px) {
+    .blog_card{
+        height: 300px;
+    }
+    .blogs_main_cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    } 
+}
+
+@media screen and (min-width:600px) and (max-width:1023px) {
+    .blogs_main_cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    } 
+}

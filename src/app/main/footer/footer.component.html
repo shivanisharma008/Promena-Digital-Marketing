@@ -1,1 +1,68 @@
-<p>footer works!</p>
+<div class="footer d-flex flex-column align-items-center justify-content-center">
+    <div class="footer_body d-flex flex-column align-items-center justify-content-center w-100">
+        <div class="footer_content d-flex flex-column align-items-center justify-content-between w-100">
+            <div class="footer_content_upper_sec d-flex flex-row align-items-center justify-content-center w-100 py-5">
+                <div class="footer_content_upper_sec_body d-flex flex-wrap align-items-start justify-content-between w-85">
+                    <div class="footer_content_child d-flex flex-column gap-5 w-25 pt-2">
+                        <div class="logo">
+                            <img [routerLink]="'/landing-page/home'" src="assests/images/Promena_white_logo.png" alt="logo" width="50%">
+                        </div>
+                        <div class="social_icons d-flex gap-2">
+                            <a href="https://www.facebook.com/login/" target="_blank"><i class="fa-brands fa-facebook d-flex align-items-center justify-content-center primary-blue font-22 text-a-c"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram d-flex align-items-center justify-content-center primary-blue font-22 "></i></a>
+                            <a href="https://www.linkedin.com/login/" target="_blank"><i class="fab fa-linkedin d-flex align-items-center justify-content-center primary-blue font-22 "></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube d-flex align-items-center justify-content-center primary-blue font-22 "></i></a>
+                        </div>
+                    </div>
+                    <div class="footer_content_child d-flex flex-column gap-3 w-25">
+                        <p class="primary-white font-20 fw-700">For business query, reach the Founder</p>
+                        <div class="email d-flex align-items-center gap-2">
+                            <i class="fas fa-mobile-alt  d-flex align-items-center justify-content-center  font-20 "></i>
+                            <a href="promena@gmail.com" class=" secondary-white font-18 text-d-n">{{email}}</a>
+                        </div>
+                        <div class="phone d-flex align-items-center gap-2">
+                            <i class="fas fa-mobile-alt  d-flex align-items-center justify-content-center  font-20 "></i>
+                            <a href="8978787878" class=" secondary-white font-18 text-d-n">8978787878</a>
+                        </div>
+                    </div>
+                    <div class="footer_content_child d-flex flex-column gap-3 w-35">
+                        <p class="primary-white font-20 fw-700">For any collaboration or Hiring, reach the People’s Operation
+                        </p>
+                        <div class="email d-flex align-items-center gap-2">
+                            <i class="fas fa-mobile-alt  d-flex align-items-center justify-content-center  font-20 "></i>
+                            <a href="promena@gmail.com" class=" secondary-white font-18 text-d-n">{{email}}</a>
+                        </div>
+                        <div class="phone d-flex align-items-center gap-2">
+                            <i class="fas fa-mobile-alt  d-flex align-items-center justify-content-center  font-20 "></i>
+                            <a href="8978787878" class=" secondary-white font-18 text-d-n">8978787878</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_content_lower_sec d-flex flex-row align-items-center justify-content-center gap-3 w-100 py-1">
+                <div class="footer_content_lower_sec_body d-flex flex-wrap justify-content-end gap-5 w-75 ">
+                    <div class="footer_content_lower_sec_menus primary-black font-20 cursor" [routerLink]="'/landing-page/about'">About</div>
+                    <div class="footer_content_lower_sec_menus primary-black font-20 cursor" [routerLink]="'/landing-page/services'">Services</div>
+                    <div class="footer_content_lower_sec_menus primary-black font-20 cursor" [routerLink]="'/landing-page/testimonial'">Testimonials</div>
+                    <!-- <div class="footer_content_lower_sec_menus primary-black foncursort [routerLink]="'/landing-page/about'"-20 ">Portfolio</div> -->
+                    <div class="footer_content_lower_sec_menus primary-black font-20 cursor" [routerLink]="'/landing-page/blogs'">Blog</div>
+                    <div class="footer_content_lower_sec_menus primary-black font-20 cursor" [routerLink]="'/landing-page/career'">Career</div>
+                    <div class="footer_content_lower_sec_menus primary-black font-20 cursor" [routerLink]="'/landing-page/contact'">Contact Us</div>
+                </div>
+               
+            </div>
+
+        </div>
+        <div class="footer_policy d-flex flex-row align-items-center justify-content-center w-100 primary-blue-bg">
+            <div class="footer_policy_body d-flex flex-wrap align-items-center justify-content-between w-75">
+                <div class="copyright">
+                    <p class="secondary-font secondary-white font-14 ">Copyright © 2024 | All Rights Reserved The Promena</p>
+                </div>
+                <div class="privacy_policy">
+                    <a class="secondary-font secondary-white font-18 text-d-n">Privacy Policy</a>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+</div>

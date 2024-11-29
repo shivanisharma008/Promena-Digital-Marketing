@@ -1,0 +1,103 @@
+.footer_content_upper_sec {
+    background-color: transparent;
+    // background-image: linear-gradient(230deg, var(--primary-blue) 72%, rgb(64 139 255 / 10%) 25%);
+    background-color: var(--primary-blue);
+}
+
+.footer_content_lower_sec {
+    background-color: rgb(64 139 255 / 10%);
+}
+
+.footer_content_lower_sec_body {
+    // margin-left: 200px;
+}
+
+.social_icons i {
+    // background-image: linear-gradient(#061c96, #1971d1);
+    background-color: white;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.email i,
+.phone i {
+    background-color: white;
+    // background-image: linear-gradient(#061c96,#1971d1);
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    color: var(--primary-blue);
+}
+
+@media screen and (max-width:599px) {
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social_icons{
+        align-items: center;
+        justify-content: center;
+    }
+    .footer_content_upper_sec_body{
+        gap: 30px;
+    }
+    .footer_content_child:nth-child(1){
+        gap: 20px !important;
+    }
+    .footer_content_child{
+        width: 100% !important;
+    }
+    .footer_content_lower_sec_body{
+        gap: 25px !important;
+    }
+    .footer_content_lower_sec_menus{
+        width: 100% ;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1023px) {
+    .footer_content_upper_sec_body{
+        gap: 30px;
+    }
+   
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo img{
+        width: 40% !important;
+    }
+  
+    .footer_content_child:nth-child(1){
+        width: 100% !important;
+        align-items: center;
+        justify-content: center;
+        gap: 20px !important;
+    }
+    .footer_content_child:nth-child(2){
+        width: 45% !important;
+    }
+    .footer_content_child:nth-child(3){
+        width: 45% !important;
+    }
+    .footer_content_lower_sec_body{
+        width: 90% !important;
+        justify-content: center !important;
+        gap: 25px !important;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
+    .social_icons i {
+        font-size: 18px !important;
+        width: 35px;
+        height: 35px;
+    }
+    .footer_content_child:nth-child(2){
+        width: 28% !important;
+    }
+}

@@ -1,0 +1,28 @@
+<div class="blogs_main d-flex flex-column align-items-center justify-content-center">
+    <div class="blogs_body d-flex flex-column align-items-center justify-content-center w-100">
+        <div class="banner d-flex flex-column align-items-center justify-content-center  w-100 ">
+            <div class="banner_content d-flex flex-column align-items-center justify-content-center w-65">
+                <h1 class="heading-font font-50 fw-700">Our Blogs</h1>
+            </div>
+            <img src="assests/images/start_blue.png" alt="star" class="extra-img" width="8%">
+            <img src="assests/images/ball-img.png" alt="star" class="ball-img">
+        </div>
+
+        <div class="blogs_main_cards w-85 py-5">
+            <div class="blog_card d-flex flex-column " *ngFor="let blog of blogsCard">
+                <div class="blog_card_img">
+                    <img [src]="blog.img" alt="blog-card-img">
+                </div>
+                <div class="blog_card_content d-flex flex-column gap-2">
+                    <div class="blog_card_content_title d-flex flex-column gap-3">
+                        <h2 class="primary-white font-20 fw-600">{{blog.title}}</h2>
+                        <p class="primary-white font-14 fw-400">{{blog.date}}</p>
+                    </div>
+                    <div class="blog_card_content_butn d-flex justify-content-end me-5">
+                        <a class="primary-white font-16 fw-500 text-d-n">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,11 @@
-<p>header works!</p>
+<div class="header d-flex flex-row align-items-center justify-content-center w-100 py-3">
+    <div class="header_body d-flex flex-row align-items-center justify-content-between w-85">
+        <div class="logo">
+            <!-- <h1>LOGO</h1> -->
+            <img src="assests/images/Promenalogo.png" alt="logo" width="15%" routerLink="/home">
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-bars font-24 primary-blue px-2 py-1" (click)="onToggleMenu()"></i>
+        </div>
+    </div>
+</div>

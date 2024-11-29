@@ -1,1 +1,19 @@
-<p>sidenav works!</p>
+<div class="sidenav d-flex align-items-center justify-content-center" >
+    <div class="sidenav_body d-flex flex-column align-items-center justify-content-center w-85">
+        <!-- <div class="moving-lines"></div> -->
+        <div class="close_icon d-flex align-items-start justify-content-end w-100">
+            <i class="fa-solid fa-xmark primary-blue font-30" (click)="close()"></i>
+        </div>
+        <div class="menus d-flex flex-wrap align-items-center gap-5">
+            <a [routerLink]="'/landing-page/about'" class="primary-black font-30 fw-600 text-d-n cursor" >About</a>
+            <a [routerLink]="'/landing-page/services'" class="primary-black font-30 fw-600 text-d-n cursor" routerLink="/services" (click)="close()">Services</a>
+            <a [routerLink]="'/landing-page/testimonial'" class="primary-black font-30 fw-600 text-d-n cursor" (click)="close()">Testimonials</a>
+            <!-- <a class="primary-black font-30 fw-600 text-d-n cursor">Portfolio</a> -->
+            <a [routerLink]="'/landing-page/blogs'" class="primary-black font-30 fw-600 text-d-n cursor" (click)="close()">Blog</a>
+            <a [routerLink]="'/landing-page/career'" class="primary-black font-30 fw-600 text-d-n cursor" (click)="close()">Career</a>
+            <a [routerLink]="'/landing-page/contact'" class="primary-black font-30 fw-600 text-d-n cursor" (click)="close()">Contact Us</a>
+        </div>
+        <!-- <div *ngIf="clearEffectVisible" [ngStyle]="{ top: clearEffectTop + 'px', left: clearEffectLeft + 'px' }"
+            class="clear-effect"></div> -->
+    </div>
+</div>

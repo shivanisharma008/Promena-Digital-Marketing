@@ -1,0 +1,117 @@
+
+// .arrow{
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     width: 30%;
+// }
+.branding_left{
+    position: relative;
+}
+.left-person-img{
+    z-index: 100;
+}
+.star-img{
+    position: absolute;
+    left: 31px;
+    bottom: -35px;
+    z-index: -2;
+    animation: rotate 15s linear infinite;
+}
+.circle_img {
+    animation: rotate 15s linear infinite;
+}
+.branding_right_child2{
+    position: relative;
+}
+.men-img{
+    z-index: 1;
+}
+.solar_img{
+    position: absolute;
+    top: -164px;
+    right: 0;
+    z-index: -2;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:599px) {
+    .branding_body{
+        gap: 60px;
+    }
+    .branding_left{
+        width: 100% !important;
+        justify-content: center !important;
+        display: none !important;
+    }
+    .branding_right{
+        width: 100% !important;
+    }
+    .right_upper_sec{
+        display: none !important;
+    }
+    .branding_right_child1{
+        width: 100% !important;
+    }
+    .branding_right_child2{
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+    .solar_img{
+        top: -44px;
+        width: 40%;
+       
+    }
+    
+}
+
+
+
+
+
+// .branding_body{
+//     position: relative;
+// }
+// .rotate {
+//     display: inline-block; 
+//     transform: rotate(180deg) translateY(-10px); 
+//     vertical-align: middle;  
+// }
+// // .branding_content_right{
+// //     position: relative;
+// //     height: 100%;
+// // }
+// .right_heading {
+//     position: relative;
+//     height: 100%; 
+//     flex-grow: 1; 
+// }
+// .right_heading h1 {
+//     position: absolute;
+//     top: 50%;
+//     transform: translate(-50%, -50%) rotate(-90deg); 
+//     transform-origin: center;
+//     text-align: center;
+//     display: inline-block; 
+//     line-height: 1;
+// }
+// .right_heading span{
+//     line-height: 0.8;
+// }
+// .right_text{
+//     position: absolute;
+//     bottom: 30px;
+//     margin-right: 20px;
+//     border-bottom: 1px solid black;
+// }

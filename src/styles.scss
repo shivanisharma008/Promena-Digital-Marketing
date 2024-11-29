@@ -7,9 +7,26 @@ body {
     font-family: "quicheflare-bold";
     src: url(../public/assests/fonts/quiche-flare-serif-font-family/Demo_Fonts/Fontspring-DEMO-quicheflare-bold.otf) format("truetype");
 }
+@font-face {
+  font-family: "quicheflare-regular";
+  src: url(../public/assests/fonts/quiche-flare-serif-font-family/Demo_Fonts/Fontspring-DEMO-quicheflare-regular.otf) format("truetype");
+}
+
+// @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 body {
-    font-family: "quicheflare-bold";
+    font-family: "Montserrat", sans-serif;;
+    // font-family: "quicheflare-bold";
+}
+
+.heading-font{
+  font-family: "quicheflare-bold";
+}
+.secondary-font{
+  font-family: "quicheflare-regular";
 }
 
 h1,
@@ -24,21 +41,169 @@ p {
 
 body {
   margin: 0;
-  --primary-blue: #336AEA;
+  --primary-blue: #19245e;
+  --secondary-blue:#1971d1;
+  --primary-black: #111827;
+  --primary-white: #ffffff;
+  --secondary-white: #EBEBEB;
+  --primary-grey:#5F5E5D;
+  // --secondary-black: #323232;
+  // --primary-lightest-blue: #C7C7C7;
+  // --primary-blue: #5f5e5d;
+  // --primary-grey: #808080;
+  // --primary-light-grey: #3F3F3F;
+  // --secondary-grey: #676C8B;
+  // --light-grey: #909090;
+  // --dark-grey: #595959;
+  // --light-white: #C7C7C7;
+  // --grey: #EEF0F5;
+  // --heading: #122A52;
+  // --new-color1: #4c57a5;
+  // --new-color2: #8C8C8C;
   
-  ;
 }
+
 
 //Text Colors
 
-.text-primary{
-    color: var(--primary-blue);
+.primary-blue {
+  color: var(--primary-blue);
+}
+.secondary-blue{
+  color: var(--secondary-blue);
+}
+.gradient-blue{
+  color: transparent; 
+  background-image: linear-gradient(#061c96, #1971d1);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.primary-black {
+  color: var(--primary-black);
+}
+.primary-white {
+  color: var(--primary-white);
+}
+.secondary-white {
+  color: var(--secondary-white);
+}
+.primary-grey {
+  color: var(--primary-grey);
 }
 
+
+// .primary-lightest-blue {
+//   color: var(--primary-lightest-blue);
+// }
+
+// .secondary-grey {
+//   color: var(--secondary-grey);
+// }
+
+// .light-grey {
+//   color: var(--light-grey);
+// }
+
+// .dark-grey {
+//   color: var(--dark-grey);
+// }
+
+// .primary-light-grey {
+//   color: var(--primary-light-grey);
+// }
+
+// .light-white {
+//   color: var(--light-white);
+// }
+
+// .heading-color {
+//   color: var(--heading)
+// }
+
+// .new-color1 {
+//   color: var(--new-color1);
+// }
+
+// .new-color2 {
+//   color: var(--new-color2);
+// }
+
+// .yellow-color {
+//   color: #FFC300;
+// }
+
 //background color
-.bg-primary{
-    background-color: var(--primary-blue);
+
+.primary-blue-bg {
+  background-color: var(--primary-blue);
 }
+
+.secondary-blue-bg {
+  background-color: var(--secondary-blue);
+}
+
+.gradient-blue-bg{
+  background-image: linear-gradient(#061c96,#1971d1);
+}
+
+.primary-black-bg {
+  background-color: var(--primary-black);
+}
+
+.transparent-bg {
+  background-color: transparent;
+}
+
+.primary-white-bg {
+  background-color: var(--primary-white)
+}
+
+.secondary-white-bg {
+  background-color: var(--secondary-white)
+}
+.primary-grey-bg {
+  background-color: var(--primary-grey);
+}
+
+// .primary-lightest-blue-bg {
+//   background-color: var(--primary-lightest-blue);
+// }
+
+// .secondary-grey-bg {
+//   background-color: var(--secondary-grey);
+// }
+
+// .light-grey-bg {
+//   background-color: var(--light-grey);
+// }
+
+// .dark-grey-bg {
+//   background-color: var(--dark-grey);
+// }
+
+// .primary-light-grey-bg {
+//   background-color: var(--primary-light-grey);
+// }
+
+// .light-white-bg {
+//   background-color: var(--light-white);
+// }
+
+// .grey-bg {
+//   background-color: var(--grey);
+// }
+
+// .new-color1-bg {
+//   background-color: var(--new-color1);
+// }
+
+// .new-color2-bg {
+//   background-color: var(--new-color2);
+// }
+
+// .yellow-bg {
+//   background-color: #FFC300;
+// }
 
 
 //font weights
@@ -68,6 +233,14 @@ body {
 
 .fw-300 {
   font-weight: 300 !important;
+}
+
+.fw-200 {
+  font-weight: 200 !important;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
 }
 
 //Letter Spacing
@@ -209,11 +382,14 @@ body {
 }
 
 .br-3 {
-  border-radius: 0.29vw;
+  border-radius: 3px;
 }
 
 .br-10 {
   border-radius: 10px;
+}
+.br-30 {
+  border-radius: 30px;
 }
 
 .mat-form-field {
@@ -410,6 +586,10 @@ body {
   .font-50 {
     font-size: 35px;
   }
+
+  .font-65{
+    font-size: 26px;
+  }
   
   .font-42 {
     font-size: 30px;
@@ -494,6 +674,10 @@ body {
     font-size: 50px;
   }
 
+  .font-65{
+    font-size: 45px;
+  }
+
   .font-45 {
     font-size: 45px;
   }
@@ -560,11 +744,19 @@ body {
 
 @media screen and (min-width: 1024px) and (max-width: 1560px) {
   .font-110 {
-    font-size: 110px;
+    font-size: 120px;
+  }
+
+  .font-100{
+    font-size:100px
   }
 
   .font-50 {
-    font-size: 60px;
+    font-size: 78px;
+  }
+
+  .font-65{
+    font-size: 65px;
   }
 
   .font-45 {
@@ -596,7 +788,7 @@ body {
   }
 
   .font-24 {
-    font-size: 24px;
+    font-size: 25px;
   }
 
   .font-22 {
@@ -639,6 +831,10 @@ body {
 
   .font-50 {
     font-size: 70px;
+  }
+
+  .font-65{
+    font-size: 68px;
   }
 
   .font-45 {
