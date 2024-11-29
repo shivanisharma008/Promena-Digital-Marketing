@@ -24,3 +24,9 @@
     border: 2px solid var(--primary-blue);
     // border: 2px solid var(--primary-blue);
 }
+
+@media screen and (max-width:599px) {
+    .logo img{
+        width: 40% !important;
+    }
+}
