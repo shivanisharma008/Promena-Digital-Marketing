@@ -1,124 +1,131 @@
-.banner {
-    background: linear-gradient(to right, rgba(65, 105, 225, 0.2), rgba(65, 105, 225, 0.6));
+
+.banner_main{
     height: 100vh;
-    position: relative;
 }
 
-.banner_top_button {
-    background-color: rgba(0, 0, 255, 0.115);
-}
 
-.inline-img {
-    height: auto;
-    vertical-align: middle;
-    margin: 0 10px;
-}
+// .banner {
+//     // background: linear-gradient(to right, rgba(65, 105, 225, 0.2), rgba(65, 105, 225, 0.6));
+//     background-color: #F6F3FE;
+//     height: 100vh;
+//     position: relative;
+// }
 
-.extra_img {
-    position: absolute;
-    bottom: 0;
-    left: 60px;
-    animation: bounce 5s infinite;
-}
+// .banner_top_button {
+//     background-color: rgba(0, 0, 255, 0.115);
+// }
 
-.plus_extra_img {
-    position: absolute;
-    right: 200px;
-    top: 200px;
-    animation: rotate 15s linear infinite;
-}
+// .inline-img {
+//     height: auto;
+//     vertical-align: middle;
+//     margin: 0 10px;
+// }
 
-@keyframes bounce {
+// .extra_img {
+//     position: absolute;
+//     bottom: 0;
+//     left: 60px;
+//     animation: bounce 5s infinite;
+// }
 
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
+// .plus_extra_img {
+//     position: absolute;
+//     right: 200px;
+//     top: 200px;
+//     animation: rotate 15s linear infinite;
+// }
 
-    40% {
-        transform: translateY(-20px);
-    }
+// @keyframes bounce {
 
-    60% {
-        transform: translateY(-10px);
-    }
-}
+//     0%,
+//     20%,
+//     50%,
+//     80%,
+//     100% {
+//         transform: translateY(0);
+//     }
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
+//     40% {
+//         transform: translateY(-20px);
+//     }
 
-    100% {
-        transform: rotate(360deg);
-    }
-}
+//     60% {
+//         transform: translateY(-10px);
+//     }
+// }
 
-@media screen and (max-width:599px) {
-    .heading h1 {
-        width: 90% !important;
-    }
+// @keyframes rotate {
+//     0% {
+//         transform: rotate(0deg);
+//     }
 
-    .inline-img {
-        width: 45%;
-    }
+//     100% {
+//         transform: rotate(360deg);
+//     }
+// }
 
-    .extra_img {
-        width: 35%;
-        left: 10px;
-    }
+// @media screen and (max-width:599px) {
+//     .heading h1 {
+//         width: 90% !important;
+//     }
 
-    .plus_extra_img {
-        right: 20px;
-        top: 160px;
-        width: 8%;
-    }
+//     .inline-img {
+//         width: 45%;
+//     }
 
-    .banner_top_sub_heading p {
-        width: 90% !important;
-    }
-}
+//     .extra_img {
+//         width: 35%;
+//         left: 10px;
+//     }
 
-@media screen and (min-width:600px) and (max-width:1023px) {
-    .heading h1 {
-        width: 80% !important;
-    }
+//     .plus_extra_img {
+//         right: 20px;
+//         top: 160px;
+//         width: 8%;
+//     }
 
-    .inline-img {
-        width: 36%;
-    }
+//     .banner_top_sub_heading p {
+//         width: 90% !important;
+//     }
+// }
 
-    .extra_img {
-        width: 23%;
-        left: 30px;
-    }
+// @media screen and (min-width:600px) and (max-width:1023px) {
+//     .heading h1 {
+//         width: 80% !important;
+//     }
 
-    .plus_extra_img {
-        right: 20px;
-        top: 160px;
-        width: 6%;
-    }
-}
+//     .inline-img {
+//         width: 36%;
+//     }
 
-@media screen and (min-width:1024px) and (max-width:1280px) {
-    .heading h1 {
-        width: 80% !important;
-        font-size: 45px !important;
-    }
+//     .extra_img {
+//         width: 23%;
+//         left: 30px;
+//     }
 
-    .banner_top_sub_heading p {
-        width: 80% !important;
-    }
+//     .plus_extra_img {
+//         right: 20px;
+//         top: 160px;
+//         width: 6%;
+//     }
+// }
 
-    .extra_img {
-        width: 15%;
-        // left: 30px;
-    }
+// @media screen and (min-width:1024px) and (max-width:1280px) {
+//     .heading h1 {
+//         width: 80% !important;
+//         font-size: 45px !important;
+//     }
 
-    .plus_extra_img {
-        right: 73px;
-    }
-}
+//     .banner_top_sub_heading p {
+//         width: 80% !important;
+//     }
+
+//     .extra_img {
+//         width: 15%;
+//         // left: 30px;
+//     }
+
+//     .plus_extra_img {
+//         right: 73px;
+//     }
+// }

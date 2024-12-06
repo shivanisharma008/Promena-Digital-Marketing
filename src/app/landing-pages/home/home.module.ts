@@ -8,6 +8,8 @@ import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { SolutionsComponent } from './solutions/solutions.component';
 import { GreatIdeasComponent } from './great-ideas/great-ideas.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { AboutComponent } from './about/about.component';
+import { BlogsComponent } from './blogs/blogs.component';
 
 
 
@@ -19,7 +21,9 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     WhoWeAreComponent,
     SolutionsComponent,
     GreatIdeasComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    AboutComponent,
+    BlogsComponent
   ],
   imports: [
     CommonModule,

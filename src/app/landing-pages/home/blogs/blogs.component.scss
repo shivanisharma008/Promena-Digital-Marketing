@@ -1,0 +1,36 @@
+.blog_main {
+    padding: 6% 0;
+}
+
+.blog_small_heading {
+    width: fit-content;
+}
+.blog_card{
+    position: relative;
+    overflow: hidden; /* Ensure the image doesn't overflow the card */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect for the card */
+
+}
+// .blog_card_body{
+//     box-shadow: 0px 14px 64px -4px #18274B1F, 0px 8px 22px -6px #18274B1F;
+
+// }
+
+.blog_card_img {
+    width: 100%;
+    height: 200px;
+}
+
+.blog_card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out; 
+}
+.blog_card:hover .blog_card_img img {
+    transform: scale(1.1); /* Scale the image to 110% on hover */
+}
+.blog_content_title h2:hover{
+    color: var(--primary-blue) !important;
+}
+
