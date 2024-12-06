@@ -1,0 +1,67 @@
+<div class="about_main d-flex flex-column align-items-center justify-content-center primary-white-bg">
+    <div class="about_body d-flex flex-column align-items-center justify-content-center w-80 ">
+        <div class="about_main_content d-flex flex-wrap align-items-center justify-content-center w-100">
+            <div class="about_content_left w-48">
+                <img src="assests/images/home/abou-main-img1.png" alt="girl-img" class="main_img">
+                <div class="emoji_img">
+                    <img src="assests/images/home/emoji.png.png" alt="emoji" >
+                </div>
+                <div class="star_img">
+                    <img src="assests/images/home/5-star.png" alt="star-img">
+                </div>
+                <div class="graph_img">
+                    <img src="assests/images/home/about-graph.png" alt="graph">
+                </div>
+            </div>
+            <div class="about_content_right d-flex flex-column gap-4 w-48">
+                <div class="about_content_right_head d-flex primary-grey-bg br-30">
+                    <p class=" gradient-blue font-15 fw-700 p-2 px-4">WHO WE ARE</p>
+                </div>
+                <div class="about_content_right_title d-flex flex-column gap-3">
+                    <h1 class="primary-black font-45 fw-900">Skills To Improve Your Company Brand </h1>
+                    <p class="secondary-black font-16 fw-400 ">It is a long established fact that a reader will be distracted the readable for content
+                        of a page when looking at tayout.</p>
+                </div>
+                <div class="about_content_right_score d-flex align-items-center gap-3 w-100">
+                    <div class="progress-container d-flex flex-row align-items-center gap-3 w-100" #progressContainer>
+                        <div class="progress-wrapper">
+                          <svg class="progress-circle" viewBox="0 0 36 36">
+                            <circle class="background" cx="18" cy="18" r="16"></circle>
+                            <circle
+                              class="foreground"
+                              cx="18"
+                              cy="18"
+                              r="16"
+                              [attr.stroke-dasharray]="circleStroke"
+                              [attr.stroke-dashoffset]="isInView ? (circleStroke * (1 - 65 / 100)) : circleStroke"
+                            ></circle>
+                          </svg>
+                          <span class="percentage">65%</span>
+                        </div>
+                        <p class="primary-black font-18 fw-700">Paid Search Marketing</p>
+                      
+                        <div class="progress-wrapper">
+                          <svg class="progress-circle" viewBox="0 0 36 36">
+                            <circle class="background" cx="18" cy="18" r="16"></circle>
+                            <circle
+                              class="foreground"
+                              cx="18"
+                              cy="18"
+                              r="16"
+                              [attr.stroke-dasharray]="circleStroke"
+                              [attr.stroke-dashoffset]="isInView ? (circleStroke * (1 - 95 / 100)) : circleStroke"
+                            ></circle>
+                          </svg>
+                          <span class="percentage">95%</span>
+                        </div>
+                        <p class="primary-black font-18 fw-700">Search Engine Optimization</p>
+                      </div>
+                      
+                </div>
+                <div class="about_content_right_button pt-3">
+                    <button class="primary-blue-bg primary-white font-16 fw-600 p-2 px-4 br-n br-30">Explore More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

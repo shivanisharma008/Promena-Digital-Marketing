@@ -1,4 +1,46 @@
-<div class="solutions_main d-flex flex-column align-items-center justify-content-center secondary-white-bg py-5">
+<div class="solutions_main d-flex flex-column align-items-center justify-content-center primary-white-bg">
+    <div class="solutions_body d-flex flex-column align-items-center justify-content-center gap-5 w-80 ">
+        <div class="solutions_heading d-flex flex-column align-items-center justify-content-center gap-4 text-a-c w-100">
+            <div class="about_content_right_head d-flex primary-grey-bg br-30">
+                <p class=" gradient-blue font-15 fw-700 p-2 px-4">SOLUTIONS</p>
+            </div>
+            <h1 class="font-45 fw-700 w-70">Trusted Experts In Comprehensive Digital Solutions</h1>
+        </div>
+        <div class="solutions_main_content d-flex align-items-start justify-content-between w-100">
+            <div class="solutions_content_left d-flex flex-column w-48">
+                <div *ngFor="let service of services" class="solutions_content_left_list d-flex align-items-center gap-3 py-3"
+                    (mouseenter)="showButton(service.id)" (mouseleave)="hideButton(service.id)">
+                    <img [src]="service.icon" alt="icon" width="35px">
+                    <p class="primary-black font-20 fw-600 cursor">{{ service.name }}</p>
+                    <button *ngIf="service.showButton" class="read-more-btn" (click)="navigateToService(service.id)">
+                        Read More
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="solutions_content_right d-flex flex-column gap-4 w-48">
+                <img src="assests/images/home/solutions_img.png" alt="right-img" width="100%">
+                <div class="solutions_content_right_text d-flex flex-column gap-5">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam quos, labore incidunt ea
+                        accusamus esse eum dicta ut corrupti quam consequatur autem soluta voluptates magni? Atque sequi
+                        corporis consectetur nihil?
+                    </p>
+                    <div class="d-flex ">
+                        <button class=" primary-blue-bg text-light font-16 fw-600 br-n br-3 p-2 px-4">Know More</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- <div class="solutions_main d-flex flex-column align-items-center justify-content-center secondary-white-bg py-5">
     <div class="solutions_body d-flex flex-wrap align-items-center justify-content-center w-80">
         <div class="solutions_left w-45 me-5">
             <h1 class="font-50 fw-700">Solutions</h1>
@@ -20,4 +62,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->

@@ -3,31 +3,28 @@ body {
     padding: 0;
 }
 
-@font-face {
-    font-family: "quicheflare-bold";
-    src: url(../public/assests/fonts/quiche-flare-serif-font-family/Demo_Fonts/Fontspring-DEMO-quicheflare-bold.otf) format("truetype");
-}
-@font-face {
-  font-family: "quicheflare-regular";
-  src: url(../public/assests/fonts/quiche-flare-serif-font-family/Demo_Fonts/Fontspring-DEMO-quicheflare-regular.otf) format("truetype");
-}
+// @font-face {
+//     font-family: "quicheflare-bold";
+//     src: url(../public/assests/fonts/quiche-flare-serif-font-family/Demo_Fonts/Fontspring-DEMO-quicheflare-bold.otf) format("truetype");
+// }
+// @font-face {
+//   font-family: "quicheflare-regular";
+//   src: url(../public/assests/fonts/quiche-flare-serif-font-family/Demo_Fonts/Fontspring-DEMO-quicheflare-regular.otf) format("truetype");
+// }
 
-// @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 body {
-    font-family: "Montserrat", sans-serif;;
+    font-family: "Plus Jakarta Sans", sans-serif;
     // font-family: "quicheflare-bold";
 }
 
-.heading-font{
-  font-family: "quicheflare-bold";
-}
-.secondary-font{
-  font-family: "quicheflare-regular";
-}
+// .heading-font{
+//   font-family: "quicheflare-bold";
+// }
+// .secondary-font{
+//   font-family: "quicheflare-regular";
+// }
 
 h1,
 h2,
@@ -41,25 +38,15 @@ p {
 
 body {
   margin: 0;
-  --primary-blue: #19245e;
+  --primary-blue: #6A47ED;
   --secondary-blue:#1971d1;
-  --primary-black: #111827;
+  --primary-black: #17012C;
+  --secondary-black: #757575;
+  --dark-blue:#18185E;
   --primary-white: #ffffff;
-  --secondary-white: #EBEBEB;
-  --primary-grey:#5F5E5D;
-  // --secondary-black: #323232;
-  // --primary-lightest-blue: #C7C7C7;
-  // --primary-blue: #5f5e5d;
-  // --primary-grey: #808080;
-  // --primary-light-grey: #3F3F3F;
-  // --secondary-grey: #676C8B;
-  // --light-grey: #909090;
-  // --dark-grey: #595959;
-  // --light-white: #C7C7C7;
-  // --grey: #EEF0F5;
-  // --heading: #122A52;
-  // --new-color1: #4c57a5;
-  // --new-color2: #8C8C8C;
+  --secondary-white: #F6F3FE;
+  --primary-grey:#EBEDFF;
+ 
   
 }
 
@@ -74,12 +61,15 @@ body {
 }
 .gradient-blue{
   color: transparent; 
-  background-image: linear-gradient(#061c96, #1971d1);
+  background: linear-gradient(90deg, #240CF2 0%, #00A9B5 100%);
   background-clip: text;
   -webkit-background-clip: text;
 }
 .primary-black {
   color: var(--primary-black);
+}
+.secondary-black {
+  color: var(--secondary-black);
 }
 .primary-white {
   color: var(--primary-white);
@@ -91,47 +81,6 @@ body {
   color: var(--primary-grey);
 }
 
-
-// .primary-lightest-blue {
-//   color: var(--primary-lightest-blue);
-// }
-
-// .secondary-grey {
-//   color: var(--secondary-grey);
-// }
-
-// .light-grey {
-//   color: var(--light-grey);
-// }
-
-// .dark-grey {
-//   color: var(--dark-grey);
-// }
-
-// .primary-light-grey {
-//   color: var(--primary-light-grey);
-// }
-
-// .light-white {
-//   color: var(--light-white);
-// }
-
-// .heading-color {
-//   color: var(--heading)
-// }
-
-// .new-color1 {
-//   color: var(--new-color1);
-// }
-
-// .new-color2 {
-//   color: var(--new-color2);
-// }
-
-// .yellow-color {
-//   color: #FFC300;
-// }
-
 //background color
 
 .primary-blue-bg {
@@ -142,9 +91,9 @@ body {
   background-color: var(--secondary-blue);
 }
 
-.gradient-blue-bg{
-  background-image: linear-gradient(#061c96,#1971d1);
-}
+// .gradient-blue-bg{
+//   background-image: linear-gradient(#061c96,#1971d1);
+// }
 
 .primary-black-bg {
   background-color: var(--primary-black);
@@ -164,46 +113,9 @@ body {
 .primary-grey-bg {
   background-color: var(--primary-grey);
 }
-
-// .primary-lightest-blue-bg {
-//   background-color: var(--primary-lightest-blue);
-// }
-
-// .secondary-grey-bg {
-//   background-color: var(--secondary-grey);
-// }
-
-// .light-grey-bg {
-//   background-color: var(--light-grey);
-// }
-
-// .dark-grey-bg {
-//   background-color: var(--dark-grey);
-// }
-
-// .primary-light-grey-bg {
-//   background-color: var(--primary-light-grey);
-// }
-
-// .light-white-bg {
-//   background-color: var(--light-white);
-// }
-
-// .grey-bg {
-//   background-color: var(--grey);
-// }
-
-// .new-color1-bg {
-//   background-color: var(--new-color1);
-// }
-
-// .new-color2-bg {
-//   background-color: var(--new-color2);
-// }
-
-// .yellow-bg {
-//   background-color: #FFC300;
-// }
+.dark-blue-bg {
+  background-color: var(--dark-blue);
+}
 
 
 //font weights
@@ -330,6 +242,10 @@ body {
 
 .br-10 {
   border-radius: 10px;
+}
+
+.br-15 {
+  border-radius: 15px;
 }
 
 .br-20 {
@@ -591,6 +507,10 @@ body {
     font-size: 26px;
   }
   
+  .font-60{
+    font-size: 30px;
+  }
+
   .font-42 {
     font-size: 30px;
   }
@@ -678,6 +598,10 @@ body {
     font-size: 45px;
   }
 
+  .font-60{
+    font-size: 50px;
+  }
+
   .font-45 {
     font-size: 45px;
   }
@@ -759,8 +683,12 @@ body {
     font-size: 65px;
   }
 
+  .font-60{
+    font-size: 60px;
+  }
+
   .font-45 {
-    font-size: 50px;
+    font-size: 45px;
   }
 
   .font-42 {
@@ -835,6 +763,10 @@ body {
 
   .font-65{
     font-size: 68px;
+  }
+
+  .font-60{
+    font-size: 70px;
   }
 
   .font-45 {

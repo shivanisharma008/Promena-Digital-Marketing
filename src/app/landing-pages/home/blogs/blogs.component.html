@@ -1,0 +1,43 @@
+<div class="blog_main d-flex flex-column align-items-center justify-content-center secondary-white-bg">
+    <div class="blog_body  d-flex flex-column align-items-center justify-content-center gap-5 w-90">
+        <div class="blog_heading d-flex flex-column align-items-center justify-content-center gap-3">
+            <div class="blog_small_heading d-flex primary-grey-bg br-30">
+                <p class="gradient-blue font-15 fw-700 p-2 px-4">Blog & News</p>
+            </div>
+            <div class="blog_title d-flex justify-content-center">
+                <h1 class="primary-black font-45 fw-700 w-60 text-a-c">Use SEO To Drive Growth At Your Business</h1>
+            </div>
+        </div>
+        <div class="blog_main_cards w-100">
+            <div class="row">
+                <div class="blog_card col-12 col-md-6 col-lg-3" *ngFor="let blog of blogs">
+                    <div class="blog_card_body d-flex flex-column gap-4 primary-white-bg br-15 p-3">
+                        <div class="blog_card_img">
+                            <img [src]="blog.img" alt="blog-img" class="br-15">
+                        </div>
+                        <div class="blog_card_content d-flex flex-column gap-4 w-100">
+                            <div class="blog_content_basic_info d-flex align-items-center justify-content-between w-100">
+                                <div class="comment d-flex align-items-center gap-2">
+                                    <img src="assests/images/home/messages-3.png" alt="message" width="20%">
+                                    <p class="secondary-black font-14 fw-400">{{blog.comments}} comment</p>
+                                </div>
+                                <div class="date d-flex align-items-center gap-2">
+                                    <img src="assests/images/home/calendar.png" alt="calendar" width="20%">
+                                    <p class="secondary-black font-14 fw-400">{{blog.date}}</p>
+                                </div>
+                            </div>
+                            <div class="blog_content_title">
+                                <h2 class="text-dark font-18 fw-800 cursor">{{blog.title}}</h2>
+                            </div>
+                            <div class="blog_content_butn d-flex align-items-center justify-content-between w-100">
+                                <a class="text-dark font-14 fw-500 text-d-n cursor">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                <img src="assests/images/home/blog-profiles-img.png" alt="profiles" width="30%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</div>

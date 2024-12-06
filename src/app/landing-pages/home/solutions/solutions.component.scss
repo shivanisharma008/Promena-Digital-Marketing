@@ -1,61 +1,122 @@
 .solutions_main{
-    background-color: #F9FAFB;
+    padding: 6% 0;
 }
-// .solutions_left{
-//     overflow-x: hidden;
-// }
-.solutions_right{
-    border-left: 4px solid var(--primary-grey);
+.solutions_heading{
+    position: relative;
 }
-.view_butn button{
-    border: 1px solid var(--primary-blue);
+.overlay_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
-.solutions_left p:hover , .solutions_left h1:hover{
-    color: var(--primary-blue);
+.solutions_content_left{
+    border-right: 1px solid rgb(239, 239, 239);
+    padding-right: 80px;
 }
-.solutions_right_list p:hover{
-    color: var(--primary-blue);
+.solutions_content_left_list{
+    border-bottom: 1px solid rgb(239, 239, 239);
 }
 
-@media screen and (max-width:599px) {
-    .solutions_body{
-        gap: 30px;
-    }
-    .solutions_left{
-        width: 100% !important;
-        margin: 0 !important;
-    }
-    .solutions_right{
-        width: 100% !important;
-        justify-content: center;
-        border: none;
-    }
-    .solutions_right_list p{
-        text-align: center;
-    }
-    .view_butn{
-        justify-content: center;
-        align-items: center;
-    }
-}
-@media screen and (min-width:600px) and (max-width:1023px) {
-    .solutions_body{
-        gap: 30px;
-    }
-    .solutions_left{
-        width: 100% !important;
-    }
-    .solutions_right{
-        width: 100% !important;
-        justify-content: center;
-        border: none;
-    }
-    .solutions_right_list p{
-        text-align: center;
-    }
-    .view_butn{
-        justify-content: center;
-        align-items: center;
-    }
+.solutions_content_left_list {
+    position: relative; /* Define the boundary for the button */
+  }
+  
+  .read-more-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden; /* Hide button initially */
+  }
+  
+  .read-more-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .solutions_content_left_list:hover .read-more-btn {
+    opacity: 1;
+    visibility: visible; /* Show the button on hover */
+    transition: all 0.3s ease;
+  }
+  
+  .solutions_content_right_text button{
+    // border-radius: 100%;
+    width: fit-content;
+  }
+
+
+
+
+
+
+// .solutions_main{
+//     background-color: #F9FAFB;
+// }
+// // .solutions_left{
+// //     overflow-x: hidden;
+// // }
+// .solutions_right{
+//     border-left: 4px solid var(--primary-grey);
+// }
+// .view_butn button{
+//     border: 1px solid var(--primary-blue);
+// }
+// .solutions_left p:hover , .solutions_left h1:hover{
+//     color: var(--primary-blue);
+// }
+// .solutions_right_list p:hover{
+//     color: var(--primary-blue);
+// }
+
+// @media screen and (max-width:599px) {
+//     .solutions_body{
+//         gap: 30px;
+//     }
+//     .solutions_left{
+//         width: 100% !important;
+//         margin: 0 !important;
+//     }
+//     .solutions_right{
+//         width: 100% !important;
+//         justify-content: center;
+//         border: none;
+//     }
+//     .solutions_right_list p{
+//         text-align: center;
+//     }
+//     .view_butn{
+//         justify-content: center;
+//         align-items: center;
+//     }
+// }
+// @media screen and (min-width:600px) and (max-width:1023px) {
+//     .solutions_body{
+//         gap: 30px;
+//     }
+//     .solutions_left{
+//         width: 100% !important;
+//     }
+//     .solutions_right{
+//         width: 100% !important;
+//         justify-content: center;
+//         border: none;
+//     }
+//     .solutions_right_list p{
+//         text-align: center;
+//     }
+//     .view_butn{
+//         justify-content: center;
+//         align-items: center;
+//     }
     
-}
+// }
